@@ -2,7 +2,7 @@ import React from 'react';
 import {StylesProvider} from '@material-ui/core/styles';
 import {Switch, Route, BrowserRouter} from 'react-router-dom';
 
-import Landing from './pages/Landing';
+import Landing from './pages/Landing'
 import Pricing from './pages/Pricing';
 
 export default () => {
