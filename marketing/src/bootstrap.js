@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Landing from './pages/Landing';
+import App from './App';
 
 // Mount function to start up the app
 const mount = el => {
   ReactDOM.render(
-    <Landing />,
+    <App/>,
     el
   )
 }

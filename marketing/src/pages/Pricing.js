@@ -5,7 +5,7 @@ import {Button, Card, CardActions, CardContent, CardHeader, Link, Container, Box
 
 import useStyles from '../styles';
 import {tiers, footers} from '../data';
-import {Text, GridContainer, GridItem} from '../components';
+import {Text, GridContainer, GridItem, Copyright} from '../components';
 
 export default () => {
   const classes = useStyles();
