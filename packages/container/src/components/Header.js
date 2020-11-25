@@ -4,11 +4,11 @@ import {Link as RouterLink} from 'react-router-dom';
 
 import useStyles from '../styles'
 
-export default ({signedIn, onSignOut}) => {
+export const Header = ({isSignedIn, onSignOut}) => {
   const classes = useStyles();
 
   const onClick = () => {
-    if (signedIn && onSignOut) {
+    if (isSignedIn && onSignOut) {
       onSignOut();
     }
   }
@@ -38,10 +38,10 @@ export default ({signedIn, onSignOut}) => {
             variant="outlined" 
             className={classes.link} 
             component={RouterLink} 
-            to={signedIn ? '/' : '/auth/signin'}
+            to={isSignedIn ? '/' : '/auth/signin'}
             onClick={onClick}
           >
-            {signedIn ? 'Logout' : 'Login'}
+            {isSignedIn ? 'Logout' : 'Login'}
           </Button>
         </Toolbar>
       </AppBar>
