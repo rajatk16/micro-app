@@ -15,7 +15,7 @@ import {
   GridItem
 } from '../components';
 
-export const SignIn = ({onSignIn}) => {
+const SignIn = ({onSignIn}) => {
   const classes = useStyles();
 
   return (
@@ -90,3 +90,5 @@ export const SignIn = ({onSignIn}) => {
     </CustomContainer>
   )
 }
+
+export default SignIn

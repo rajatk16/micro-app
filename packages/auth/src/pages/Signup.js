@@ -7,7 +7,7 @@ import { Copyright, CustomButton, CustomContainer, Form, GridContainer, GridItem
 import {LockOutlined } from '@material-ui/icons';
 
 
-export const Signup = ({onSignIn}) => {
+const Signup = ({onSignIn}) => {
   const classes = useStyles();
 
   return (
@@ -116,3 +116,5 @@ export const Signup = ({onSignIn}) => {
     </CustomContainer>
   )
 }
+
+export default Signup
